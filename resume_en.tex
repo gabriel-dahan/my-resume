@@ -1,0 +1,124 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[margin=1.5cm,bottom=0.8cm]{geometry}
+\usepackage{fontawesome5} 
+\usepackage{xcolor} 
+\usepackage{titlesec} 
+\usepackage{enumitem} 
+\usepackage{tabularx} 
+\usepackage[hidelinks]{hyperref} 
+
+% --- Custom Colors ---
+\definecolor{graytext}{HTML}{7A7A7A}
+
+% --- Section Formatting ---
+\titleformat{\section}
+  {\Large\bfseries}
+  {}
+  {0em}
+  {\rule{2cm}{3pt}\hspace{0.5em}}
+\titlespacing*{\section}{0pt}{1.5ex}{1ex}
+
+% --- Global Parameters ---
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\begin{document}
+
+% ================= HEADER =================
+\begin{minipage}[b]{0.6\textwidth}
+    {\Huge \textbf{Gabriel Dahan}}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.35\textwidth}
+    \raggedleft \small
+    Rennes, FRANCE \\
+    \faPhone \ +33(0) 7 61 74 04 92 \\
+    \faEnvelope \ \href{mailto:work@gabrieldahan.me}{work@gabrieldahan.me} \\
+    \faLinkedin \ \href{https://www.linkedin.com/in/gabriel-dahan/}{gabriel-dahan} \\
+    \faGlobe \ \href{https://gabrieldahan.me/}{gabrieldahan.me}
+\end{minipage}
+
+\vspace{0.6cm}
+
+% --- Subtitle ---
+\textbf{Engineering Student at ENSAI, passionate about software development and data analysis}
+
+\vspace{0.4cm}
+
+% ================= EDUCATION =================
+\section*{Education}
+
+\begin{tabularx}{\textwidth}{@{}p{2.5cm} X@{}}
+2025--Present & \textbf{Engineering Degree}, ENSAI, Rennes \\
+& \vspace{-0.2cm}
+  \begin{itemize}[leftmargin=0.4cm, itemsep=1pt, topsep=0pt]
+    \item Accredited by the Commission des Titres d'Ingénieur (CTI). Engineering degree in statistics and data science.
+  \end{itemize} \\
+
+2025--Present & \textbf{Bachelor's Degree in Mathematics}, University of Rennes I, Rennes \\
+& \vspace{-0.2cm}
+  \begin{itemize}[leftmargin=0.4cm, itemsep=1pt, topsep=0pt]
+    \item \textbf{Specialization:} Mathematics and interactions. Expected 180 ECTS credits upon completion.
+  \end{itemize} \\
+
+2023--2025 & \textbf{Preparatory Classes for Grandes Écoles (CPGE)}, Lycée Charlemagne, Paris \\
+& \vspace{-0.2cm}
+  \begin{itemize}[leftmargin=0.4cm, itemsep=1pt, topsep=0pt]
+    \item Intensive preparation in advanced mathematics, demonstrating time management, resilience, and discipline under a heavy workload.
+  \end{itemize} \\
+\end{tabularx}
+
+% ================= EXPERIENCE =================
+\section*{Experience}
+
+\begin{tabularx}{\textwidth}{@{}p{2.5cm} X@{}}
+05/2026--08/2026 & \textbf{Internship: Analytics Product Development}, LiveRamp, Levallois-Perret
+  \begin{itemize}[leftmargin=0.4cm, itemsep=1pt, topsep=0pt]
+    \item \textbf{Analytics Development:} Design of new analytical features to leverage and maximize the value of data.
+    \item \textbf{GCP Ecosystem:} Utilizing Google Cloud Platform infrastructure to design scalable and high-performance solutions.
+  \end{itemize} \\
+\end{tabularx}
+
+% ================= ACADEMIC PROJECTS =================
+\section*{Academic Projects}
+\vspace{-0.1cm}
+\begin{itemize}[leftmargin=0.4cm, itemsep=4pt]
+    
+    \item \textbf{Extensible Data Framework (ORM)} -- Sportix: Built a lightweight ORM that adapts to any dataset once its relational mapping class is defined.
+    \textbf{Technologies:} Python, pandas
+    \item \textbf{Statistics Project} -- Theme: "Technology and Educational Performance".
+    \textbf{Technologies:} R, Quarto/\LaTeX
+    \item \textbf{Economics Project} -- Theme: "Skill Obsolescence and Employment".
+    \textbf{Technologies:} Quarto/\LaTeX
+    \item \textbf{TIPE: Terrain Generation} -- Implemented algorithms (Perlin noise, filtering) to generate realistic terrain heightmaps, including parameter visualization and complexity analysis.
+    \textbf{Technologies:} Python, OCaml.
+\end{itemize}
+
+% ================= PERSONAL PROJECTS =================
+\section*{Projects}
+\vspace{-0.1cm}
+\begin{itemize}[leftmargin=0.4cm, itemsep=4pt]
+    \item \textbf{COMX} -- Digital comics platform combining monetization, open API, and an automatic translation tool for multilingual distribution.
+    \textbf{Technologies:} VueJS, Remult, Pinia, TailwindCSS, DaisyUI, TypeScript.
+    \item \textbf{VaderMap} -- Website featuring Invader's art with a way to save the positions of mosaics you've found, as well as their state (alive, broken, etc.).
+    \textbf{Technologies:} Python, Flask, JavaScript, SQLite.
+\end{itemize}
+
+\vspace{0.2cm}
+
+% ================= SKILLS =================
+\section*{Skills}
+\vspace{-0.2cm}
+\begin{itemize}[leftmargin=0.4cm, itemsep=1pt]
+    \item \textbf{IT \& Programming:} Python, Javascript (NodeJS, Typescript, VueJS), HTML/CSS, OCaml, Git.
+    \item \textbf{Data, Cloud \& DBMS:} R, SQL, Google Cloud Platform (GCP), Metabase, PostgreSQL, SQLite.
+    \item \textbf{Scientific Publishing:} \LaTeX, Markdown, Quarto, Jupyter.
+    \item \textbf{Languages:} French (Native), English (Advanced), Spanish (Intermediate), Japanese (Beginner).
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\frenchsetup{StandardLists=true}
+\usepackage[margin=1.5cm,bottom=0.8cm]{geometry}
+\usepackage{fontawesome5} 
+\usepackage{xcolor} 
+\usepackage{titlesec} 
+\usepackage{enumitem} 
+\usepackage{tabularx} 
+\usepackage[hidelinks]{hyperref} 
+
+% --- Custom Colors ---
+\definecolor{graytext}{HTML}{7A7A7A}
+
+% --- Section Formatting ---
+\titleformat{\section}
+  {\Large\bfseries}
+  {}
+  {0em}
+  {\rule{2cm}{3pt}\hspace{0.5em}}
+\titlespacing*{\section}{0pt}{1.5ex}{1ex}
+
+% --- Global Parameters ---
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\setlist[itemize]{label=\textbullet, leftmargin=0.4cm, topsep=0pt, parsep=0pt, partopsep=0pt}
+
+\begin{document}
+
+% ================= HEADER =================
+\begin{minipage}[b]{0.6\textwidth}
+    {\Huge \textbf{Gabriel Dahan}}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.35\textwidth}
+    \raggedleft \small
+    Rennes, FRANCE \\
+    \faPhone \ +33(0) 7 61 74 04 92 \\
+    \faEnvelope \ \href{mailto:work@gabrieldahan.me}{work@gabrieldahan.me} \\
+    \faLinkedin \ \href{https://www.linkedin.com/in/gabriel-dahan/}{gabriel-dahan} \\
+    \faGlobe \ \href{https://gabrieldahan.me/}{gabrieldahan.me}
+\end{minipage}
+
+\vspace{0.6cm}
+
+% --- Sous-titre ---
+\textbf{Etudiant ingénieur à l'ENSAI, passionné par le développement et l'analyse de données}
+
+\vspace{0.4cm}
+
+% ================= EDUCATION =================
+\section*{Formation}
+
+\begin{tabularx}{\textwidth}{@{}p{2.5cm} X@{}}
+2025--présent & \textbf{Diplôme d'ingénieur}, ENSAI, Rennes \\
+& \vspace{-0.2cm}
+  \begin{itemize}[leftmargin=0.4cm, itemsep=1pt, topsep=0pt]
+    \item Accrédité par la Commission des Titres d'Ingénieur (CTI). Diplôme d'ingénieur en statistiques et sciences des données.
+  \end{itemize} \\
+
+2025--présent & \textbf{Licence de Mathématiques}, Université de Rennes I, Rennes \\
+& \vspace{-0.2cm}
+  \begin{itemize}[leftmargin=0.4cm, itemsep=1pt, topsep=0pt]
+    \item \textbf{Spécialisation :} Mathématiques et interactions. Obtention de 180 crédits ECTS à l'issue du cursus.
+  \end{itemize} \\
+
+2023--2025 & \textbf{Classes préparatoires aux grandes écoles (CPGE)}, Lycée Charlemagne, Paris \\
+& \vspace{-0.2cm}
+  \begin{itemize}[leftmargin=0.4cm, itemsep=1pt, topsep=0pt]
+    \item Mathématiques avancées, gestion du temps, résilience et discipline dans le cadre d'une grande charge de travail.
+  \end{itemize} \\
+\end{tabularx}
+
+% ================= EXPERIENCE =================
+\section*{Expérience}
+
+\begin{tabularx}{\textwidth}{@{}p{2.5cm} X@{}}
+05/2026--présent & \textbf{Stage: LiveRamp - Développement de produits analytiques}, Levallois-Perret 
+  \begin{itemize}[leftmargin=0.4cm, itemsep=1pt, topsep=0pt]
+    \item \textbf{Développement Analytics :} Conception de nouvelles fonctionnalités analytiques pour valoriser les données.
+    \item \textbf{Écosystème GCP :} Exploitation de l'infrastructure Google Cloud Platform pour concevoir des solutions scalables et performantes.
+  \end{itemize} \\
+\end{tabularx}
+
+% ================= ACADEMIC PROJECTS =================
+\section*{Projets académiques}
+\vspace{-0.1cm}
+\begin{itemize}[leftmargin=0.4cm, itemsep=4pt]
+    \item \textbf{Projet de statistiques} -- Thème : "Technologie et performances éducatives".
+    \textbf{Technologies :} R, \LaTeX, Quarto
+    \item \textbf{Framework de données extensible (ORM)} -- Sportix : Conception d'un ORM léger s'adaptant à tout jeu de données dès lors que sa classe de mapping relationnel est définie.
+    \textbf{Technologies :} Python, pandas
+    \item \textbf{Projet d'économie} -- Thème : "Obsolescence des compétences et emploi".
+    \textbf{Technologies :} Quarto, \LaTeX
+    \item \textbf{TIPE : Génération de terrains} -- Recherche et implémentation d'algorithmes (bruit de Perlin et flou par filtre moyen) pour générer des cartes de hauteur réalistes. Scripts pour visualiser l'impact de différents paramètres, optimisation des algorithmes et analyse de complexité.
+    \textbf{Technologies :} Python, OCaml.
+\end{itemize}
+
+% ================= PERSONAL PROJECTS =================
+\section*{Projets}
+\vspace{-0.1cm}
+\begin{itemize}[leftmargin=0.4cm, itemsep=4pt]
+    \item \textbf{\hyperlink{https://comx.click/}{COMX}} -- Plateforme de lecture de comics numériques alliant monétisation, API ouverte, et un outil de traduction automatique pour une diffusion multilingue.
+    \textbf{Technologies :} VueJS, Remult, Pinia, TailwindCSS, DaisyUI, TypeScript.
+    \item \textbf{VaderMap} -- Site web présentant l'art d'Invader, offrant la possibilité de sauvegarder la position des mosaïques que vous avez trouvées, ainsi que leur état (intactes, cassées, etc.).
+    \textbf{Technologies :} Python, Flask, JavaScript, SQLite. 
+\end{itemize}
+
+\vspace{0.2cm}
+
+% ================= SKILLS =================
+\section*{Compétences}
+\vspace{-0.2cm}
+\begin{itemize}[leftmargin=0.4cm, itemsep=1pt]
+    \item \textbf{IT \& Programmation :} Python, Javascript (NodeJS, Typescript, VueJS), HTML/CSS, OCaml, Git.
+    \item \textbf{Data, Cloud \& SGBD :} R, SQL, Google Cloud Platform (GCP), Metabase, BigQuery, PostgreSQL, SQLite.
+    \item \textbf{Édition scientifique :} \LaTeX, Markdown, Quarto, Jupyter.
+    \item \textbf{Langues :} Français (Natif), Anglais (Avancé), Espagnol (Intermédiaire), Japonais (Débutant).
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,5 @@
+.cursor/
+
+resume_*.*
+!resume_*.pdf
+!resume_*.tex
