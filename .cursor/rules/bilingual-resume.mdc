@@ -1,0 +1,21 @@
+---
+description: Keep English and French resumes in sync and rebuild both PDFs
+alwaysApply: true
+---
+
+# Bilingual resume updates
+
+This project has two parallel resumes: `resume_en.tex` and `resume_fr.tex` in their respective folder `en` and `fr`.
+
+## Always do both
+
+- When the user asks to change resume content, layout, or styling, update **both** `resume_en.tex` and `resume_fr.tex` unless they explicitly say otherwise.
+- Keep structure, spacing, and visual formatting aligned across languages; only the wording should differ.
+- After editing either `.tex` file, rebuild **both** PDFs (`resume_en.pdf` and `resume_fr.pdf`) with `latexmk -pdf` (or `pdflatex`).
+
+## Example
+
+```bash
+latexmk -pdf -interaction=nonstopmode en/resume_en.tex
+latexmk -pdf -interaction=nonstopmode fr/resume_fr.tex
+```
